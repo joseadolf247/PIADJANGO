@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esto es una plantilla</title>
+    <link rel="stylesheet" href="{% static "/css/estilos.css" %}">
+</head>
+<body>
+    <h1>Plantilla PIA</h1>
+    {% for s in sucursales %}
+        <h2>{{s.nombre}}</h2>
+    {% endfor %}
+    <img src="{% static "/img/fondo3.jpg" %}" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ab saepe veniam nihil voluptatum itaque quas iure exercitationem, sed rerum voluptate. Hic facere est eligendi, cum at veritatis molestiae provident!
+    </p>
+</body>
