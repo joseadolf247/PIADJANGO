@@ -7,3 +7,4 @@ def index(request):
         "sucursales":Sucursales.objects.all()
     }
     return render(request,"index.html",context=datos)
+
