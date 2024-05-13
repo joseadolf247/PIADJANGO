@@ -5,27 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicacion</title>
-    <link rel="stylesheet" href="{% static "/css/estilos.css" %}">
+    <link rel="stylesheet" href="{% static "/css/estilosUbi.css" %}">
 </head>
 <body>
-    <header>
-
+    <header class="header1">
+        <nav>
+            <ul>
+                <li><a href="#">Index</a></li>
+                <li><a href="#">Quienes somos?</a></li>
+                <li><a href="#">Servicios o Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ubicacion</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1>Ubicacion</h1>
 
     </main>
     <aside>
 
     </aside>
     <footer>
-        
-    </footer>
-
-    <h1>Ubicacion</h1>
-    {% for s in sucursales %}
-        <h2>{{s.nombre}}</h2>
-    {% endfor %}
-    <img src="{% static "/img/fondo3.jpg" %}" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ab saepe veniam nihil voluptatum itaque quas iure exercitationem, sed rerum voluptate. Hic facere est eligendi, cum at veritatis molestiae provident!
-    </p>
+        <div class="footer-container">
+            <div class="contactos">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: 123-456-789</a></li>
+                    <li><a href="#">Email: pedrazamarcelyamileth@gmail.com</a></li>
+                    <p>Dirección: Isla de navidad 101 Col.Valles de guadalupe GPE N.L. </p>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="terminos">
+                <ul>
+                    <p>Todos los derechos reservados &copy; 2024</p>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <address>
+                <p class="pequeño">elaborado por MYPS</p>
+            </address>
+        </footer>
 </body>
