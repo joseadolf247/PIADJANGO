@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" href="{% static "/css/estilosServ.css" %}">
+    <link rel="stylesheet" href="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\css\estilosServ.css">
 </head>
 <body>
     <header>
@@ -20,11 +20,106 @@
 
     </article>
 
-    <section>
-        <div class="wrapper">
-            <div class="car">car-1</div>
-            <div class="car">car-2</div>
-            <div class="car">car-3</div>
+    <section class="product">
+        <h2 class="product-category">best selling</h2>
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\ok.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\gato.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\ok.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\ok.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\ok.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\gato.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\gato.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\img\gato.jpg" class="product-thumbn" alt="">
+                    <button class="card-btn">Mas Informacion</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nombre del auto</h2>
+                    <p class="product-desc">test desc del auto</p>
+                    <span class="price">$3.fiddy</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -35,11 +130,10 @@
     <footer>
 
     </footer>
+    
     <h1>Servicios</h1>
     {% for s in sucursales %}
         <h2>{{s.nombre}}</h2>
     {% endfor %}
-    <img src="{% static "/img/fondo3.jpg" %}" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ab saepe veniam nihil voluptatum itaque quas iure exercitationem, sed rerum voluptate. Hic facere est eligendi, cum at veritatis molestiae provident!
-    </p>
 </body>
+</html>
