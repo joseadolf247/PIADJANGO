@@ -1,0 +1,120 @@
+.header1{
+    background-color: #000000; 
+    padding: 20px; 
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+
+nav ul li {
+    display: inline; 
+    justify-content: center;
+    margin-right: 20px; 
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    border: 3px solid rgb(52, 52, 63);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: rgb(149, 172, 149); 
+}
+
+footer {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.contactos,.redes-sociales {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+
+.redes-sociales ul {
+    padding: 0;
+    list-style: none; 
+}
+
+.redes-sociales ul li {
+    margin-bottom: 10px; 
+}
+
+.redes-sociales ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.redes-sociales ul li a:hover{
+    color: rgb(52, 52, 63);
+}
+
+.terminos {
+    text-align: center; 
+}
+
+.terminos ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.terminos ul li {
+    display: inline; 
+    margin: 0 10px; 
+}
+
+.terminos ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.terminos ul li a:hover {
+    text-decoration: underline; 
+}
+
+.contactos {
+    text-align: center; 
+}
+
+.contactos ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.contactos ul li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.contactos ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.contactos ul li a:hover {
+    text-decoration: underline; 
+}
+
+.footer-container .contactos p {
+    font-size: 16px; 
+}
+
+.terminos ul p {
+    font-size: 16px; 
+}
