@@ -1,6 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    /*
+    background: -webkit-linear-gradient(to right, #88a9f0fd, #3a63bb);
+	background: linear-gradient(to right, #88a9f0fd, #3a63bb);*/
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;;
+}
+.header-img {
+    height: 250px; /* Ajusta la altura según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    background-image: url('Autolavado.jpg')"
+  }
+
 .header1{
-    background-color: #000000; 
+    background-color: #000000;
     padding: 20px; 
+    text-align: center;
+}
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
@@ -20,13 +59,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none; 
     color: rgb(255, 255, 255); 
-    border: 3px solid rgb(52, 52, 63);
     border-radius: 5px;
     padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    color: rgb(149, 172, 149); 
+    color: gray; 
 }
 
 footer {
@@ -39,11 +77,6 @@ footer {
 .footer-container {
     display: flex; 
     justify-content: space-around; 
-}
-
-.contactos,.redes-sociales {
-    flex: 1; 
-    margin: 0 10px; 
 }
 
 
@@ -62,7 +95,7 @@ footer {
 }
 
 .redes-sociales ul li a:hover{
-    color: rgb(52, 52, 63);
+    color: gray;
 }
 
 .terminos {
@@ -85,30 +118,8 @@ footer {
 }
 
 .terminos ul li a:hover {
-    text-decoration: underline; 
-}
-
-.contactos {
-    text-align: center; 
-}
-
-.contactos ul {
-    list-style: none; 
-    padding: 0; 
-}
-
-.contactos ul li {
-    display: inline-block; 
-    margin: 0 10px; 
-}
-
-.contactos ul li a {
-    color: #ffffff; 
     text-decoration: none; 
-}
-
-.contactos ul li a:hover {
-    text-decoration: underline; 
+    color: gray;
 }
 
 .footer-container .contactos p {
