@@ -1,28 +1,85 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes somos?</title>
-    
+    <title>¿Quiénes Somos?</title>
+    <link rel="stylesheet" href="{% static "/css/estilosQuienes.css" %}">
 </head>
 <body>
-    <h1>Quiénes somos?</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, porro vero? Magni amet aut ex quos? Quia veniam esse sunt odit molestias quos fugiat, autem rem earum, perspiciatis corrupti doloremque?
-    Iure, laudantium perspiciatis, provident alias totam nisi laboriosam aperiam vel rem assumenda quibusdam praesentium officiis? Iure quidem vero dolor qui, eveniet illum non labore debitis amet, atque, tempore expedita aperiam.
-    Eius, tempora, quas eligendi impedit error sequi, facilis doloribus esse molestias atque quasi reprehenderit facere harum sint labore laboriosam accusamus ut omnis eveniet rerum similique aspernatur? Ratione aliquid ipsam culpa!
-    Eligendi, reprehenderit a incidunt ea libero saepe tenetur ut consequatur sunt soluta officiis voluptatibus culpa maxime nemo, animi quo voluptates reiciendis. Vitae ex corporis eos cum quos nostrum, perspiciatis eius?
-    Sit, natus! Adipisci voluptatem iste nam consectetur! Aspernatur voluptate fugiat, nobis eos incidunt rem nam dolores quas esse, dolore maiores ipsum! Fugiat esse soluta eaque, in vel tempora! Ad, voluptatibus.
-    Tenetur aperiam dolores quos, mollitia quo iure, quis fuga corrupti incidunt commodi voluptas laboriosam doloremque omnis corporis eaque ipsa ipsam culpa suscipit cupiditate quisquam. Consequatur aperiam officiis reprehenderit pariatur unde.
-    Ut nisi nostrum illo quasi. Earum ut officiis tempora quis dicta suscipit debitis eius quod ipsam, maiores voluptas nisi minus, aliquam voluptatem neque veniam laborum corrupti aspernatur repellendus exercitationem assumenda.
-    Ipsam minus ratione numquam aspernatur, atque ullam cumque dolor alias, enim reprehenderit est accusamus similique iste sapiente nostrum dicta beatae natus voluptas? Illum quam eos officia quasi inventore ex est.
-    Sapiente ratione possimus et eveniet illum quasi, qui dolor, iusto sequi ipsam excepturi voluptas sint harum, fugiat tempora soluta aspernatur aut voluptatum a eaque culpa. Sunt obcaecati magni officia autem!
-    Odio, saepe ipsam nisi ipsum neque quod dolorum facere. Quibusdam cumque dolore dolorem. Recusandae facere eligendi vitae ipsam dolores, officiis quis possimus dolore commodi laborum est minima et, culpa distinctio.
+    <header class="header1" >
+        <img src="{% static "/img/Autolavado.jpg" %}" alt="">
+        <div class="header-img"></div>
+        <nav class="nav-container">
+            <ul>
+                <li><a href="#">Index</a></li>
+                <li><a href="#">Quienes somos?</a></li>
+                <li><a href="#">Servicios o Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <h1>¿Quiénes Somos?</h1>
+
+    <p class="parrafo1">
+    Bienvenidos a Supreme Car Wash, donde la calidad y el detalle se encuentran en cada servicio. Somos un equipo apasionado por la excelencia y dedicados a proporcionar una experiencia de lavado de autos superior que va más allá de las expectativas. <br>
+    Desde nuestros inicios, nos hemos comprometido a ofrecer un cuidado excepcional para cada vehículo que pasa por nuestras manos. Utilizamos productos de primera calidad y técnicas avanzadas para asegurar que tu automóvil no solo quede impecable, sino también protegido y reluciente como nuevo. <br> <br>
     </p>
 
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, architecto unde adipisci soluta facilis officiis pariatur harum eius, labore fugit aspernatur, ab atque modi quos dolorum totam voluptatem perspiciatis vero?</p>
-    </footer>
+
+    <div>
+        
+    </div>
+
+
+
+   <section class="cuadro">
+        <p class="parrafo2">
+        <b>Nuestra Misión</b> <br>
+        En Supreme Car Wash, nuestra misión es elevar el estándar del lavado de autos. Creemos que cada cliente merece un servicio personalizado y un resultado impecable, por lo que nos esforzamos en cada detalle, garantizando la satisfacción total de quienes confían en nosotros. 
+        </p>
+
+
+        <p class="parrafo3">
+        <b>Nuestros Valores</b> <br>
+        - Calidad: Utilizamos productos y equipos de alta gama para asegurar un lavado perfecto.
+        - Profesionalismo: Nuestro equipo está compuesto por expertos capacitados que se dedican a brindar un servicio excepcional.
+        - Innovación: Incorporamos las últimas tecnologías y métodos en el cuidado de vehículos para ofrecer siempre lo mejor.
+        - Sostenibilidad: Nos preocupamos por el medio ambiente y utilizamos productos eco-amigables que minimizan el impacto ecológico.
+        </p>
+
+        <p class="parrafo4">
+        <b>Nuestra Promesa</b> <br>
+        En Supreme Car Wash, tu auto es nuestra prioridad. Garantizamos un acabado brillante y una atención al detalle que hará que tu vehículo destaque en cualquier lugar. Ven y descubre la diferencia de un lavado de autos de alta calidad con nosotros. 
+        </p>
+    </section>
+
     
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="terminos">
+                <ul>
+                    <p>Todos los derechos reservados &copy; 2024</p>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </footer>
 </body>
-</html>
