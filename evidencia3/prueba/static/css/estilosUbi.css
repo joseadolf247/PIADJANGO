@@ -1,32 +1,83 @@
-.header1{
-    background-color: #000000; 
-    padding: 20px; 
+body {
+    font-family: Arial, sans-serif;
+    background-color:#ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;;
+    text-align: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none; 
-    padding: 0; 
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
+.header-img {
+    position: relative;
+    height: 300px; 
+    background-image: url('Autolavado.jpg');;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 300px) {
+    .header-img {
+        height: 50vh;
+    }
+}
+
+.header1 {
+    padding: 20px; 
+    text-align: center;
+    position: relative;
+}
+
+.nav-container {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 nav ul li {
-    display: inline; 
-    justify-content: center;
-    margin-right: 20px; 
+    display: inline-block;
+    margin-right: 10px;
 }
 
-
 nav ul li a {
-    text-decoration: none; 
-    color: rgb(255, 255, 255); 
-    border: 3px solid rgb(52, 52, 63);
-    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
     padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: rgb(149, 172, 149); 
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #000000;
 }
 
 footer {
@@ -39,11 +90,6 @@ footer {
 .footer-container {
     display: flex; 
     justify-content: space-around; 
-}
-
-.contactos,.redes-sociales {
-    flex: 1; 
-    margin: 0 10px; 
 }
 
 
@@ -62,7 +108,7 @@ footer {
 }
 
 .redes-sociales ul li a:hover{
-    color: rgb(52, 52, 63);
+    color: gray;
 }
 
 .terminos {
@@ -85,30 +131,8 @@ footer {
 }
 
 .terminos ul li a:hover {
-    text-decoration: underline; 
-}
-
-.contactos {
-    text-align: center; 
-}
-
-.contactos ul {
-    list-style: none; 
-    padding: 0; 
-}
-
-.contactos ul li {
-    display: inline-block; 
-    margin: 0 10px; 
-}
-
-.contactos ul li a {
-    color: #ffffff; 
     text-decoration: none; 
-}
-
-.contactos ul li a:hover {
-    text-decoration: underline; 
+    color: gray;
 }
 
 .footer-container .contactos p {
