@@ -18,15 +18,16 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    height: 600px;
+    height: auto;
 }
 
 
 .product-card {
     flex: 0 0 auto;
     width: 250px;
-    height: 450px;
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-image {
@@ -71,6 +72,7 @@
     padding-top: 10px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-brand {
