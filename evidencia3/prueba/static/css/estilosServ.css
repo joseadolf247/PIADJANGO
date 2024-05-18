@@ -18,11 +18,9 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    
+    height: 600px;
 }
-.product-container::-webkit-scrollbar {
-    display: none;
-}
+
 
 .product-card {
     flex: 0 0 auto;
