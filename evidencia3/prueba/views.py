@@ -7,4 +7,11 @@ def index(request):
         "sucursales":Sucursales.objects.all()
     }
     return render(request,"index.html",context=datos)
-
+def contacto(request):
+    return render(request,"contacto.html")
+def quienessomos(request):
+    return render(request,"quienessomos.html")
+def servicios(request):
+    return render(request,"servicios.html")
+def ubicacion(request):
+    return render(request,"ubicacion.html")
