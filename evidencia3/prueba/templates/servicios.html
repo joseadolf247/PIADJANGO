@@ -5,149 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" href={% static "/css/estilosServ.css" %}>
+    <link rel="stylesheet" href={% static "/css/estilosUbi.css" %}>
 </head>
 <body>
     <header class="header1" >
-        <img src="{% static "/img/Autolavado.jpg" %}" alt="">
-        <div class="header-img"></div>
+        <img src="{% static "/img/logo.jpg" %}" alt="">
         <nav class="nav-container">
             <ul>
-                <li><a href="..">Index</a></li>
+                <li><a href="..">Inicio</a></li>
                 <li><a href="../quienessomos/">Quienes somos?</a></li>
-                <li><a href="">Servicios o Productos</a></li>
+                <li><a href="../servicios/">Servicios o Productos</a></li>
                 <li><a href="../contacto/">Contacto</a></li>
                 <li><a href="../ubicacion/">Ubicacion</a></li>
             </ul>
         </nav>
     </header>
-
-    <nav>
-
-    </nav>
-
-    <article>
-
-    </article>
-
-    <section class="product">
-        <h2 class="container">Nuestros servicios</h2>
-        <div class="product-container">
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera1.jpeg" %}" class="product-thumbn" alt="">
+    <div class="container">
+        <main>
+            <section class="product">
+                <h2 class="container">Nuestros servicios</h2>
+                <div class="product-container">
+                    {% for s in servicios %}
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{s.imagen.url}}" class="product-thumbn" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">{{s.nombreservicios}}</h2>
+                            <p class="product-desc">{{s.descripcion}}</p>
+                            <p class="product-desc">Tiempo estimado de espera: {{s.tiempo}} mins</p>
+                            <span class="price">${{s.precio}}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Hotwax Brillante</h2>
-                    <p class="product-desc">Incluye: Shampoo, cera de color, Aspirado, Limpiador especial para llantas y ventanas, Aromatizante.<br />
-                    Garantia: Seguro de lluvia de 24hrs</p>
-                    <p class="product-desc">Tiempo estimado de espera: 45mins</p>
-                    <span class="price">$170</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera2.jpg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Servicio Deluxe</h2>
-                    <p class="product-desc">Incluye: Shampoo, cera de color, Aspirado,<br />
-                    Limpiador especial para llantas y ventanas</p>
-                    <p class="product-desc">Tiempo estimado de espera: 30mins</p>
-                    <span class="price">$160</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera3.jpg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Exterior</h2>
-                    <p class="product-desc">Incluye: Shampoo, Cera de color,<br />
-                    Limpiador especial para llantas y ventanas</p>
-                    <p class="product-desc">Tiempo estimado de espera: 20mins</p>
-                    <span class="price">$125</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera4.jpeg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Cera Express</h2>
-                    <p class="product-desc">Servicio adicional para tu lavado<br />
-                    Garantia: Final de encerada express</p>
-                    <p class="product-desc">Tiempo adicional estimado de espera: 5mins</p>
-                    <span class="price">$100</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera5.jpeg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Pulido de faros</h2>
-                    <p class="product-desc">Servicio adicional para tu lavado<br />
-                    Garantia: Pulida de faros para claridad total</p>
-                    <p class="product-desc">Tiempo adicional estimado de espera: 3mins</p>
-                    <span class="price">$100</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera6.jpeg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Abrillantado de pintura</h2>
-                    <p class="product-desc">Incluye lavado de: asiento, puertas, cinturones, alfombra, tablero y cajuela.<br />
-                    Garantia: Lavado y aspirado deluxe con pintura extra brillante</p>
-                    <p class="product-desc">Tiempo estimado de espera: 50mins</p>
-                    <span class="price">$750</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="{% static "/img/cera7.jpeg" %}" class="product-thumbn" alt="">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Lavado de tapiceria</h2>
-                    <p class="product-desc">Incluye lavado de: asiento, puertas, cinturones, alfombra, tablero y cajuela.<br />
-                    Garantia: Lavado y aspirado deluxe con tapiceria lavada</p>
-                    <p class="product-desc">Tiempo estimado de espera: 60mins</p>
-                    <span class="price">$750</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <aside>
-
-    </aside>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="footer-container">
             <div class="redes-sociales">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
         </div>
             <div class="terminos">
                 <ul>
                     <p>Todos los derechos reservados &copy; 2024</p>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="https://www.gob.mx/cms/uploads/attachment/file/92883/POLITICA_DE_PRIVACIDAD_INDAABIN.pdf">Política de Privacidad</a></li>
+                    <li><a href="https://www.gob.mx/terminos#:~:text=T%C3%A9rminos%20y%20condiciones%20del,uso%20del%20sitio%20de%20gob.mx">Términos y Condiciones</a></li>
                 </ul>
             </div>
     </footer>

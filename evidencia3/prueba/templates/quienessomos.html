@@ -5,81 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quiénes Somos?</title>
-    <link rel="stylesheet" href="{% static "/css/estilosQuienes.css" %}">
+    <link rel="stylesheet" href="{% static "/css/estilosUbi.css" %}">
 </head>
 <body>
     <header class="header1" >
-        <img src="{% static "/img/Autolavado.jpg" %}" alt="">
-        <div class="header-img"></div>
+        <img src="{% static "/img/logo.jpg" %}" alt="">
         <nav class="nav-container">
             <ul>
-                <li><a href="#">Index</a></li>
-                <li><a href="#">Quienes somos?</a></li>
-                <li><a href="#">Servicios o Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ubicacion</a></li>
+                <li><a href="..">Inicio</a></li>
+                <li><a href="../quienessomos/">Quienes somos?</a></li>
+                <li><a href="../servicios/">Servicios o Productos</a></li>
+                <li><a href="../contacto/">Contacto</a></li>
+                <li><a href="../ubicacion/">Ubicacion</a></li>
             </ul>
         </nav>
     </header>
-    
-
-    <h1>¿Quiénes Somos?</h1>
-
-    <p class="parrafo1">
-    Bienvenidos a Supreme Car Wash, donde la calidad y el detalle se encuentran en cada servicio. Somos un equipo apasionado por la excelencia y dedicados a proporcionar una experiencia de lavado de autos superior que va más allá de las expectativas. <br>
-    Desde nuestros inicios, nos hemos comprometido a ofrecer un cuidado excepcional para cada vehículo que pasa por nuestras manos. Utilizamos productos de primera calidad y técnicas avanzadas para asegurar que tu automóvil no solo quede impecable, sino también protegido y reluciente como nuevo. <br> <br>
-    </p>
-
-
-    <div>
+    <div class="container">
+        <main>
+            <div class="content-container">
+                <section class="about-us">
+                    <h1>¿Quiénes Somos?</h1>
+                    <p>Bienvenidos a Supreme Car Wash, donde la calidad y el detalle se encuentran en cada servicio. Somos un equipo apasionado por la excelencia y dedicados a proporcionar una experiencia de lavado de autos superior que va más allá de las expectativas.</p>
+                    <p>Desde nuestros inicios, nos hemos comprometido a ofrecer un cuidado excepcional para cada vehículo que pasa por nuestras manos. Utilizamos productos de primera calidad y técnicas avanzadas para asegurar que tu automóvil no solo quede impecable, sino también protegido y reluciente como nuevo.</p>
+                </section>
         
+                <div class="boxes-container">
+                    <section class="box mission">
+                        <h2>Nuestra Misión</h2>
+                        <p>En Supreme Car Wash, nuestra misión es elevar el estándar del lavado de autos. Creemos que cada cliente merece un servicio personalizado y un resultado impecable, por lo que nos esforzamos en cada detalle, garantizando la satisfacción total de quienes confían en nosotros.</p>
+                    </section>
+        
+                    <section class="box values">
+                        <h2>Nuestros Valores</h2>
+                        <ul>
+                            <li><strong>Calidad:</strong> Utilizamos productos y equipos de alta gama para asegurar un lavado perfecto.</li>
+                            <li><strong>Profesionalismo:</strong> Nuestro equipo está compuesto por expertos capacitados que se dedican a brindar un servicio excepcional.</li>
+                            <li><strong>Innovación:</strong> Incorporamos las últimas tecnologías y métodos en el cuidado de vehículos para ofrecer siempre lo mejor.</li>
+                            <li><strong>Sostenibilidad:</strong> Nos preocupamos por el medio ambiente y utilizamos productos eco-amigables que minimizan el impacto ecológico.</li>
+                        </ul>
+                    </section>
+        
+                    <section class="box promise">
+                        <h2>Nuestra Promesa</h2>
+                        <p>En Supreme Car Wash, tu auto es nuestra prioridad. Garantizamos un acabado brillante y una atención al detalle que hará que tu vehículo destaque en cualquier lugar. Ven y descubre la diferencia de un lavado de autos de alta calidad con nosotros.</p>
+                    </section>
+                </div>
+            </div>
+        </main>
     </div>
-
-
-
-   <section class="cuadro">
-        <p class="parrafo2">
-        <b>Nuestra Misión</b> <br>
-        En Supreme Car Wash, nuestra misión es elevar el estándar del lavado de autos. Creemos que cada cliente merece un servicio personalizado y un resultado impecable, por lo que nos esforzamos en cada detalle, garantizando la satisfacción total de quienes confían en nosotros. 
-        </p>
-
-
-        <p class="parrafo3">
-        <b>Nuestros Valores</b> <br>
-        - Calidad: Utilizamos productos y equipos de alta gama para asegurar un lavado perfecto.
-        - Profesionalismo: Nuestro equipo está compuesto por expertos capacitados que se dedican a brindar un servicio excepcional.
-        - Innovación: Incorporamos las últimas tecnologías y métodos en el cuidado de vehículos para ofrecer siempre lo mejor.
-        - Sostenibilidad: Nos preocupamos por el medio ambiente y utilizamos productos eco-amigables que minimizan el impacto ecológico.
-        </p>
-
-        <p class="parrafo4">
-        <b>Nuestra Promesa</b> <br>
-        En Supreme Car Wash, tu auto es nuestra prioridad. Garantizamos un acabado brillante y una atención al detalle que hará que tu vehículo destaque en cualquier lugar. Ven y descubre la diferencia de un lavado de autos de alta calidad con nosotros. 
-        </p>
-    </section>
-
     
-
-
-
-
     <footer>
         <div class="footer-container">
             <div class="redes-sociales">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
         </div>
             <div class="terminos">
                 <ul>
                     <p>Todos los derechos reservados &copy; 2024</p>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="https://www.gob.mx/cms/uploads/attachment/file/92883/POLITICA_DE_PRIVACIDAD_INDAABIN.pdf">Política de Privacidad</a></li>
+                    <li><a href="https://www.gob.mx/terminos#:~:text=T%C3%A9rminos%20y%20condiciones%20del,uso%20del%20sitio%20de%20gob.mx">Términos y Condiciones</a></li>
                 </ul>
             </div>
-        </footer>
+    </footer>
 </body>

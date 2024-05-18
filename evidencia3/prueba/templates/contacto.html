@@ -1,18 +1,68 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Autos </title>
-    <link rel="stylesheet" href="C:\Users\1alex\OneDrive\Desktop\PIAWeb\PIADJANGO\evidencia3\prueba\static\css\estilosServ.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{% static "/css/estilosUbi.css" %}">
 </head>
 <body>
-    <div class="contacto">
-        <h1>Contacto</h1>
-        <p>Para más información, contáctenos:</p>
-        <p>Teléfono: (+52)818-883-6414</p>
-        <p>Email: info@supremecarwash.com</p>
-        <p>Dirección: Av. uno #234, Monterrey, N.L., Mx, CP: 5678</p>
+    <header class="header1" >
+        <img src="{% static "/img/logo.jpg" %}" alt="">
+        <nav class="nav-container">
+            <ul>
+                <li><a href="..">Inicio</a></li>
+                <li><a href="../quienessomos/">Quienes somos?</a></li>
+                <li><a href="../servicios/">Servicios o Productos</a></li>
+                <li><a href="../contacto/">Contacto</a></li>
+                <li><a href="../ubicacion/">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="contact-container">
+                <div class="contact-section">
+                    <h2>¿YA ERES CLIENTE?</h2>
+                    <p>Encuentra asesoría con tu crédito aquí</p>
+                    <ul>
+                        <li><strong>Teléfono:</strong> (449) 139 5871</li>
+                        <li><strong>Correo electrónico:</strong> <a href="mailto:atencion.cliente@nrfm.com.mx">atencion.cliente@nrfm.com.mx</a></li>
+                        <li><strong>Horario de atención a clientes:</strong> Lunes a Viernes de 9:00 am a 7:00 pm<br>Sábados de 9:00 am a 3:00 pm Hora del centro</li>
+                    </ul>
+                </div>
+                <div class="contact-section">
+                    <h2>¿TIENES DUDAS?</h2>
+                    <p>Obtén atención personalizada</p>
+                    <ul>
+                        <li><strong>Teléfono:</strong> (449) 994 4847</li>
+                        <li><strong>Correo electrónico:</strong> <a href="mailto:atencion.cliente@nrfm.com.mx">atencion.cliente@nrfm.com.mx</a></li>
+                        <li><strong>Horario de atención a clientes:</strong> Lunes a Viernes de 8:00 am a 9:00 pm<br>Sábados de 8:00 am a 3:00 pm Hora del centro</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="terminos">
+                <ul>
+                    <p>Todos los derechos reservados &copy; 2024</p>
+                    <li><a href="https://www.gob.mx/cms/uploads/attachment/file/92883/POLITICA_DE_PRIVACIDAD_INDAABIN.pdf">Política de Privacidad</a></li>
+                    <li><a href="https://www.gob.mx/terminos#:~:text=T%C3%A9rminos%20y%20condiciones%20del,uso%20del%20sitio%20de%20gob.mx">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+    </footer>
 </body>
 </html>
