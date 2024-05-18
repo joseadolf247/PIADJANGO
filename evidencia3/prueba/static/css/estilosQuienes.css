@@ -24,6 +24,7 @@ h1{
 p{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    
 }
 
 img{
@@ -148,3 +149,33 @@ footer {
 .terminos ul p {
     font-size: 16px; 
 }
+
+.parrafo1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.parrafo2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+.parrafo3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.parrafo4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+
+}
+
+.cuadro{
+    display: flex;
+    margin: 7px;
+}
+
